@@ -33,7 +33,7 @@ body {
 .logo-studio {
   color: var(--secondory-light-color);
 }
-.list {
+.list-header {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -107,7 +107,7 @@ body {
 }
 .hero {
   background-color: var(--secondory-light-color);
-  width: max-content;
+
   padding: 188px 0;
 }
 .hero-title {
@@ -191,6 +191,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondory-light-color);
+  margin-bottom: 8px;
 }
 .sectiontwo-text {
   width: 264px;
@@ -202,6 +203,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondory-font-color-slate);
+}
+.list-section-two {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.list-section-two-li {
+  width: calc(100% - 72px / 4);
 }
 .sectionthree-title {
   font-family: "Roboto";
@@ -340,4 +349,7 @@ body {
 }
 img {
   display: block;
+}
+.section-two {
+  padding: 120px 0;
 }
