@@ -97,6 +97,7 @@ body {
 }
 .hero {
   background-color: var(--secondory-light-color);
+  width: max-content;
 }
 .hero-title {
   font-family: "Roboto";
@@ -306,4 +307,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondory-font-color-slate);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  width: 1440px;
+}
+.button-order {
 }
