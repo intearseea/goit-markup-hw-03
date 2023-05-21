@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main page</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +19,22 @@
   </head>
 
   <body class="body">
-    <div class="container">
-      <header class="page-header">
+    <header class="page-header">
+      <div class="container">
         <nav class="page-nav">
           <a href="./index.html" class="logo link">
             WEB<span class="logo-studio">Studio</span></a
           >
           <ul class="list">
-            <li>
+            <li class="page-header-link">
               <a href="./index.html" class="link nav-list">Studio</a>
             </li>
-            <li>
+            <li class="page-header-link">
               <a href="./portfolio.html" class="nav-list link">Portfolio</a>
             </li>
-            <li><a href="" class="nav-list link">Contacts</a></li>
+            <li class="page-header-link">
+              <a href="" class="nav-list link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="contacts">
@@ -45,14 +51,18 @@
             </li>
           </ul>
         </address>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <main>
       <!-- section 1 -->
-      <section class="hero container">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="button button-order">Order Service</button>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="button button-order">
+            Order Service
+          </button>
+        </div>
       </section>
       <!-- section 2 -->
       <section>

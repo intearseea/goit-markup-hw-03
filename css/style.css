@@ -20,7 +20,7 @@ body {
 .logo {
   width: 44px;
   height: 21px;
-
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -35,6 +35,12 @@ body {
 }
 .list {
   list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
 }
 .nav-list {
   font-family: "Roboto";
@@ -65,6 +71,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--ocean-blue);
 }
+.page-header-link {
+  padding: 24px 0;
+}
 .contacts {
   font-family: "Roboto";
   font-style: normal;
@@ -94,12 +103,15 @@ body {
 }
 .page-header {
   background-color: var(--main-light-color);
+  border-bottom: 1px solid #e7e9fc;
 }
 .hero {
   background-color: var(--secondory-light-color);
   width: max-content;
+  padding: 188px 0;
 }
 .hero-title {
+  max-width: 496px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -313,7 +325,19 @@ body {
   align-items: center;
   justify-content: space-around;
   gap: 24px;
-  width: 1440px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .button-order {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+img {
+  display: block;
 }
