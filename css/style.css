@@ -31,6 +31,7 @@ img {
 /* Default class for div */
 .container {
   width: 1158px;
+  align-items: center;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -138,6 +139,7 @@ body {
 .section-one {
   background-color: var(--secondory-light-color);
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .section-one-title {
@@ -151,6 +153,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-light-color);
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-order {
@@ -172,6 +176,8 @@ body {
   letter-spacing: 0.04em;
   color: var(--main-light-color);
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-order:focus {
@@ -290,6 +296,8 @@ body {
   height: 380px;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .section-four-container-for-stuff {
