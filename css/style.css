@@ -74,7 +74,6 @@ body {
 .container-header {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .page-header {
