@@ -33,7 +33,8 @@ img {
   width: 1158px;
   align-items: center;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .link {
@@ -364,6 +365,22 @@ body {
 
 /* PORTFOLIO */
 
+/* PORTFOLIO button section */
+.portfolio-section-one {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-section-one-list-buttons {
+  display: flex;
+  gap: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+  align-items: center;
+  justify-content: center;
+}
+
 .button-portfolio {
   background: var(--third-light-color-cloud);
   border: 1px solid var(--cornflower);
@@ -380,28 +397,39 @@ body {
   color: var(--iris);
   background-color: var(--third-light-color-cloud);
   cursor: pointer;
+  padding: 12px 24px;
 }
 
-.list .button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
   color: var(--main-light-color);
   background-color: var(--ocean-blue);
+  border: 1px solid transparent;
 }
 
-.list .button-portfolio:focus {
-  color: var(--main-light-color);
-  background-color: var(--ocean-blue);
+.portfolio-section-one-list-images {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.portfolio-icon {
-  width: 360px;
+.portfolio-icon-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-section-one-icon {
+  width: calc((100% - 48 px) / 3);
   height: 420px;
   background: var(--main-light-color);
-  border: 1px solid var(--cornflower);
 }
 
 .portfolio-icon-title {
   font-family: "Roboto";
   font-style: normal;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
