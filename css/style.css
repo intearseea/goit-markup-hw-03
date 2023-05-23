@@ -12,8 +12,11 @@ img {
   display: block;
 }
 
+/* Default class for div */
 .container {
-  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .link {
@@ -33,7 +36,7 @@ body {
 
 /* Logo */
 
-.logo {
+.logo-header {
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -52,12 +55,7 @@ body {
 /* Header */
 
 .container-header {
-  align-items: center;
-  justify-content: space-around;
-  gap: 24px;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  display: flex;
 }
 
 .page-header {
@@ -65,7 +63,12 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.list-header {
+.list-header-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.list-header-adress {
   display: flex;
   gap: 40px;
 }
@@ -75,7 +78,7 @@ body {
   align-items: center;
 }
 
-.nav-list {
+.nav-list-link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -86,24 +89,11 @@ body {
   padding: 24px 0;
 }
 
-.nav-list:hover {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
+.nav-list-link:hover {
   color: var(--ocean-blue);
 }
 
-.nav-list:focus {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.nav-list-link:focus {
   color: var(--ocean-blue);
 }
 
@@ -118,34 +108,20 @@ body {
 }
 
 .contacts:hover {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--ocean-blue);
-  letter-spacing: 0.02em;
 }
-
 .contacts:focus {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--ocean-blue);
-  letter-spacing: 0.02em;
 }
 
-/* Hero section */
+/* Section one */
 
-.hero {
+.section-one {
   background-color: var(--secondory-light-color);
-
   padding: 188px 0;
 }
 
-.hero-title {
+.section-one-title {
   max-width: 496px;
   font-family: "Roboto";
   font-style: normal;
@@ -158,6 +134,8 @@ body {
 }
 
 .button-order {
+  display: block;
+  align-items: center;
   min-width: 169px;
   height: 56px;
   left: 636px;
@@ -171,60 +149,37 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: var(--main-light-color);
-  cursor: pointer;
-  display: block;
-}
-
-.button:hover {
-  width: 169px;
-  height: 56px;
-  left: 636px;
-  top: 428px;
-  background: var(--ocean-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--main-light-color);
   cursor: pointer;
 }
 
-.button:focus {
-  width: 169px;
-  height: 56px;
-  left: 636px;
-  top: 428px;
+.button-order:focus {
   background: var(--ocean-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+}
 
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: var(--main-light-color);
-  cursor: pointer;
+.button-order:hover {
+  background: var(--ocean-blue);
 }
 
 /* Section two */
 .section-two {
   padding: 120px 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.sectiontwo-title {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-two-title {
   width: 264px;
   height: 72px;
   font-family: "Roboto";
@@ -237,7 +192,7 @@ body {
   margin-bottom: 8px;
 }
 
-.sectiontwo-text {
+.section-two-text {
   width: 264px;
   height: 72px;
   font-family: "Roboto";
@@ -249,15 +204,12 @@ body {
   color: var(--secondory-font-color-slate);
 }
 
-.list-section-two {
-  list-style: none;
+.section-two-list {
   display: flex;
   gap: 24px;
-  padding: 0;
-  margin: 0;
 }
 
-.list-section-two-li {
+.section-two-list-li {
   width: calc((100% - 72px) / 4);
 }
 
@@ -267,7 +219,7 @@ body {
   padding-bottom: 120px;
 }
 
-.sectionthree-title {
+.section-three-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -279,24 +231,23 @@ body {
   margin-bottom: 72px;
 }
 
-.list-section-three {
-  list-style: none;
+.section-three-list {
   display: flex;
   gap: 24px;
 }
 
-.list-section-three-li {
+.section-three-list-li {
   width: calc((100% - 48px) / 3);
 }
 
-/* Team section */
+/* Section four */
 
-.section-team {
+.section-four {
   background-color: var(--third-light-color-cloud);
   padding: 120px 0;
 }
 
-.team-title {
+.section-four-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -309,13 +260,12 @@ body {
   margin-bottom: 72px;
 }
 
-.list-section-four {
-  list-style: none;
+.section-four-list {
   display: flex;
   gap: 24px;
 }
 
-.stuff-icon {
+.section-four-list-li {
   background-color: var(--main-light-color);
   width: 264px;
   height: 380px;
@@ -323,7 +273,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.stuff-name {
+.section-four-container-for-stuff {
+  padding: 32px 16px;
+}
+
+.section-four-stuff-name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -335,7 +289,7 @@ body {
   margin-bottom: 8px;
 }
 
-.stuff-role {
+.section-four-stuff-role {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -356,15 +310,28 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--third-light-color-cloud);
+  max-width: 264px;
 }
 
 .footer {
   background-color: var(--secondory-light-color);
+  padding: 100px 0;
 }
 
 /* FOOTER LOGO */
-
-.logo-studio-footer {
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-footer-span {
   color: var(--third-light-color-cloud);
 }
 
